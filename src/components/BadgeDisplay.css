@@ -1,0 +1,42 @@
+.badge-display {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.badge-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  border-radius: 12px;
+  padding: 0.5rem 0.75rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  min-width: 60px;
+  transition: transform 0.2s;
+}
+
+.badge-item:hover {
+  transform: translateY(-3px);
+}
+
+.badge-emoji {
+  font-size: 1.8rem;
+}
+
+.badge-name {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #555;
+  margin-top: 2px;
+}
+
+.badge-item.locked {
+  opacity: 0.3;
+  filter: grayscale(1);
+}
+
+.badge-item.earned {
+  box-shadow: 0 2px 12px rgba(168, 216, 234, 0.6);
+}

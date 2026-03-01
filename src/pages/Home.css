@@ -1,0 +1,85 @@
+.home-page {
+  min-height: calc(100vh - 65px);
+}
+
+.home-hero {
+  text-align: center;
+  padding: 2rem 1rem 1rem;
+  background: linear-gradient(180deg, #e8f8ff 0%, #f0f0ff 100%);
+}
+
+.home-hero h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #6b5b9e;
+  margin-bottom: 0.5rem;
+}
+
+.home-hero p {
+  font-size: 1.1rem;
+  color: #777;
+  max-width: 500px;
+  margin: 0 auto 1.5rem;
+}
+
+.home-cta {
+  display: inline-block;
+  background: linear-gradient(135deg, #aa96da, #fcbad3);
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  box-shadow: 0 4px 15px rgba(170,150,218,0.4);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.home-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(170,150,218,0.5);
+}
+
+.home-stats-row {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem 1rem;
+  flex-wrap: wrap;
+  background: white;
+}
+
+.home-stat-card {
+  background: linear-gradient(135deg, #ffffd2, #fcbad3);
+  border-radius: 20px;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  min-width: 140px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+  transition: transform 0.2s;
+}
+
+.home-stat-card:hover {
+  transform: translateY(-4px);
+}
+
+.home-stat-card .stat-value {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #6b5b9e;
+}
+
+.home-stat-card .stat-label {
+  font-size: 0.85rem;
+  color: #888;
+  margin-top: 0.25rem;
+}
+
+.home-welcome-banner {
+  background: linear-gradient(135deg, #b5ead7, #a8d8ea);
+  padding: 1.5rem 2rem;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #3a7d6e;
+}
