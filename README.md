@@ -1,16 +1,43 @@
-# React + Vite
+# 🦢 REACH — Gamified Volunteer Tracking Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+REACH turns community volunteering into a fun, rewarding journey. Track your hours, evolve your goose mascot, earn badges, and discover local volunteer events.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Animated Pond** — A living home screen with your goose, lily pads, sparkles, and ripples
+- **Goose Evolution** — Your goose grows from an egg to an adult goose as you accumulate volunteer hours (resets every 40 hours per cycle, gaining a level)
+- **Badge System** — Earn Bronze, Silver, Gold, Platinum, and Diamond badges at milestone hour thresholds
+- **Volunteer Calendar** — Browse events by month and sign up directly from the app
+- **Profile Page** — View your stats, badge collection, goose tracker, and full volunteer history
+- **Responsive Navbar** — Works on desktop and mobile with a hamburger menu
 
-## React Compiler
+## Pages
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+| Path | Description |
+|------|-------------|
+| `/` | Home — animated pond with your goose and key stats |
+| `/about` | About Us — mission, how it works, community impact |
+| `/calendar` | Calendar — monthly view with volunteer events |
+| `/profile` | Profile — stats, badges, goose tracker, history |
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm install
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+## Build
+
+```bash
+npm run build
+```
+
+## Tech Stack
+
+- [React 19](https://react.dev/) + [Vite 7](https://vite.dev/)
+- [React Router DOM v7](https://reactrouter.com/)
+- CSS Modules / plain CSS with animations
+- Google Fonts (Nunito)
