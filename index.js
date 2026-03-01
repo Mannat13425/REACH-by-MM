@@ -83,7 +83,7 @@ function formatGradLabel(d) {
   });
 }
 
-gradDateLabel.textContent = `Graduation: ${formatGradLabel(GRADUATION_DATE)}`;
+gradDateLabel.textContent = `Battle: ${formatGradLabel(GRADUATION_DATE)}`;
 
 function updateCountdown() {
   const now = new Date();
