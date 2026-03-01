@@ -1,0 +1,222 @@
+.calendar-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.calendar-page h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #6b5b9e;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.calendar-subtitle {
+  text-align: center;
+  color: #888;
+  margin-bottom: 2rem;
+}
+
+.calendar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.calendar-header h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #555;
+}
+
+.calendar-nav-btn {
+  background: linear-gradient(135deg, #a8d8ea, #aa96da);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.calendar-nav-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+}
+
+.calendar-day-header {
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: #888;
+  padding: 0.5rem 0;
+}
+
+.calendar-day {
+  background: white;
+  border-radius: 12px;
+  min-height: 70px;
+  padding: 0.4rem;
+  cursor: default;
+  border: 2px solid transparent;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  position: relative;
+}
+
+.calendar-day.empty {
+  background: transparent;
+}
+
+.calendar-day.has-event {
+  cursor: pointer;
+  background: linear-gradient(135deg, #ffffd2, #fcf0ff);
+  border-color: #aa96da;
+}
+
+.calendar-day.has-event:hover {
+  box-shadow: 0 4px 15px rgba(170,150,218,0.3);
+  transform: translateY(-2px);
+}
+
+.calendar-day.today {
+  border-color: #fcbad3;
+  background: linear-gradient(135deg, #fff0f8, #ffe8f0);
+}
+
+.day-number {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.25rem;
+}
+
+.event-dot {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #7b5ea7;
+  background: rgba(170,150,218,0.2);
+  border-radius: 6px;
+  padding: 1px 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  padding: 1rem;
+  animation: fadeIn 0.2s ease;
+}
+
+.modal-content {
+  background: white;
+  border-radius: 24px;
+  padding: 2rem;
+  max-width: 420px;
+  width: 100%;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+  animation: slideUp 0.2s ease;
+}
+
+.modal-content h2 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #6b5b9e;
+  margin-bottom: 1rem;
+}
+
+.modal-detail {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 0.6rem;
+  align-items: flex-start;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.modal-detail .icon {
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.modal-description {
+  background: #f8f0ff;
+  border-radius: 12px;
+  padding: 1rem;
+  margin: 1rem 0;
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.btn-signup {
+  flex: 1;
+  background: linear-gradient(135deg, #aa96da, #fcbad3);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: inherit;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 12px rgba(170,150,218,0.3);
+}
+
+.btn-signup:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(170,150,218,0.4);
+}
+
+.btn-close {
+  background: #f0f0f0;
+  color: #666;
+  border: none;
+  border-radius: 20px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.2s;
+}
+
+.btn-close:hover {
+  background: #e0e0e0;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
