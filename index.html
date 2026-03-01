@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reach By M.M</title>
+
+  <link rel="stylesheet" href="index.css" />
+
+</head>
+<body>
+  <!-- Skip link for accessibility -->
+  <a class="skip-link" href="#home">Skip to content</a>
+
+  <!-- Sticky Navbar -->
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Primary">
+      <a class="brand" href="#home" aria-label="Reach">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">Reach</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a class="nav-link active" href="#home">Home</a></li>
+        <li><a class="nav-link" href="#events">About us</a></li>
+        <li><a class="nav-link" href="#dates">Volunteer</a></li>
+        <li><a class="nav-link" href="#forms">Profile</a></li>
+        <li><a class="nav-link" href="#fundraisers">Pond</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section id="home" class="section hero">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="pill">Make volunteering fun</p>
+          <h1 class = "fade-in-title">Welcome to Reach </h1>
+          <p class="lead">
+            This is your hub for volunteering events, connecting, meeting, and recording progress.
+            Stay in the loop, show up, and make it an unforgettable adventage.
+          </p>
+
+          <div class="countdown-card" aria-label="Reach countdown timer">
+            <div class="countdown-top">
+              <h2 class="countdown-title">Countdown to Battle</h2>
+              <p class="countdown-subtitle" id="gradDateLabel">Loading date…</p>
+            </div>
+
+            <div class="countdown-grid" role="timer" aria-live="polite">
+              <div class="time-box">
+                <div class="time-value" id="days">--</div>
+                <div class="time-label">Days</div>
+              </div>
+              <div class="time-box">
+                <div class="time-value" id="hours">--</div>
+                <div class="time-label">Hours</div>
+              </div>
+              <div class="time-box">
+                <div class="time-value" id="minutes">--</div>
+                <div class="time-label">Minutes</div>
+              </div>
+              <div class="time-box">
+                <div class="time-value" id="seconds">--</div>
+                <div class="time-label">Seconds</div>
+              </div>
+            </div>
+
+            <p class="countdown-note" id="countdownNote">Battle others with volunteering hours to win more points.</p>
+          </div>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#events" id="viewEventsBtn">View Upcoming Events</a>
+            <a class="btn btn-ghost" href="#dates">See your pond</a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="glass-card">
+            <h3>TeamWork Links</h3>
+            <ul class="quick-links">
+              <li><a href="#forms">Current Battle Team</a></li>
+              <li><a href="#fundraisers"> Current Teamates </a></li>
+              <li><a href="#contact">Find more people here</a></li>
+            </ul>
+
+            <div class="mini-stats">
+              <div class="stat">
+                <span class="stat-num">6</span>
+                <span class="stat-label">Major Volunteering Events</span>
+              </div>
+              <div class="stat">
+                <span class="stat-num">5</span>
+                <span class="stat-label">Key Deadlines</span>
+              </div>
+              <div class="stat">
+                <span class="stat-num">3</span>
+                <span class="stat-label">Teams</span>
+              </div>
+            </div>
+
+            <p class="small muted">
+              Find your team.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EVENTS -->
+    <section id="events" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Events</h2>
+          <p class="muted">Mark your calendar—more details will be posted as plans are finalized.</p>
+        </div>
+
+        <div class="cards-grid">
+          <!-- Event Card -->
+          <article class="card reveal">
+            <div class="card-top">
+              <h3>Bread of Life</h3>
+              <span class="tag">Malden</span>
+            </div>
+            <p> Helps provide food support and meals to people in need; volunteers can distribute groceries at the Everett Mobile Market, help deliver food to people who are homebound, and assist with meal service or pantry organization.</p>
+            <div class="meta">
+              <span class="meta-label">Date:</span>
+              <span class="meta-value">March 2026</span>
+            </div>
+            <button class="btn btn-secondary card-btn" data-modal="Senior Sunrise">Learn More</button>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-top">
+              <h3>Everett Public Libraries Volunteer Program.</h3>
+              <span class="tag">Everett </span>
+            </div>
+            <p>Teens age 14+ can volunteer by shelving books, helping in library programs, and tutoring peers as part of the Study Buddies, supporting literacy and access to resources.</p>
+            <div class="meta">
+              <span class="meta-label">Date:</span>
+              <span class="meta-value">March 2026</span>
+            </div>
+            <button class="btn btn-secondary card-btn" data-modal="Fall Pep Rally">Learn More</button>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-top">
+              <h3>Joint Committee for Children’s Health Care </h3>
+              <span class="tag">Everett</span>
+            </div>
+            <p>Community members can volunteer to support local health care access and aid education for individuals and families.</p>
+            <div class="meta">
+              <span class="meta-label">Date:</span>
+              <span class="meta-value">April 2026</span>
+            </div>
+            <button class="btn btn-secondary card-btn" data-modal="Winter Formal">Learn More</button>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-top">
+              <h3>Teen & Community Playspace with Horizons for Homeless Children</h3>
+              <span class="tag">Everywhere</span>
+            </div>
+Teen & Community Playspace with Horizons for Homeless Children – Volunteers (16+) can spend weekly time playing and interacting with young children in shelters, helping with developmental activities to support families experiencing homelessness.            <div class="meta">
+              <span class="meta-label">Date:</span>
+              <span class="meta-value">April 2026 (TBD)</span>
+            </div>
+            <button class="btn btn-secondary card-btn" data-modal="Prom">Learn More</button>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-top">
+              <h3>Eliot Family Resource Center</h3>
+              <span class="tag">Everett</span>
+            </div>
+            <p>A community center that provides family services and support; volunteers might assist with programs for youth or community events.</p>
+            <div class="meta">
+              <span class="meta-label">Date:</span>
+              <span class="meta-value">May/Jun 2026</span>
+            </div>
+            <button class="btn btn-secondary card-btn" data-modal="Senior Week">Learn More</button>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-top">
+              <h3>Community Events & Cleanup Days</h3>
+              <span class="tag">Everett</span>
+            </div>
+            <p> Groups in nearby Everett organize community gardening and cleanup events some weekends; these are good if you want short‑term volunteer activities.</p>
+            <div class="meta">
+              <span class="meta-label">Date:</span>
+              <span class="meta-value">Jun 2026</span>
+            </div>
+            <button class="btn btn-secondary card-btn" data-modal="Graduation">Learn More</button>
+          </article>
+        </div>
+      </div>
+    </section>
+    
+    
+    
+    
+    
+    
+    
+    
+
+    <!-- Team info -->
+    <section id="dates" class="section section-alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Current Teammates</h2>
+          <p class="muted">See your teamates and Teams</p>
+        </div>
+
+        <div class="dates-grid">
+          <div class="date-item reveal">
+            <div class="date-badge">MA</div>
+            <div class="date-info">
+              <h3>Impact Squad</h3>
+              
+              <p class="muted">5 members</p>
+            </div>
+          </div>
+
+          <div class="date-item reveal">
+           
+            <div class="date-info">
+              <h3> 2000 points</h3>
+           
+            </div>
+          </div>
+
+          <div class="date-item reveal">
+            <div class="date-badge">KC</div>
+            <div class="date-info">
+              <h3>Kindness Crew<p class="muted">5 members</p>
+            </div>
+          </div>
+
+          <div class="date-item reveal">
+            
+            <div class="date-info">
+              <h3>1000 points </h3>
+              
+            </div>
+          </div>
+
+          <div class="date-item reveal">
+            <div class="date-badge">SS</div>
+            <div class="date-info">
+              <h3>Service Stars</h3>
+              <p class="muted">6 members</p>
+            </div>
+          </div>
+
+          <div class="date-item reveal">
+            
+            <div class="date-info">
+              <h3>1500 points</h3>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMS -->
+    <section id="forms" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Levels</h2>
+          <p class="muted">Earn Bages</p>
+        </div>
+
+        <div class="forms-grid">
+          <a class="btn btn-primary reveal" href="https://example.com/prom-guest-form" target="_blank" rel="noopener noreferrer">
+            10 service hours --> Bronze
+          </a>
+          <a class="btn btn-primary reveal" href="https://example.com/volunteer-signup" target="_blank" rel="noopener noreferrer">
+             10 service hours --> Bronze
+          </a>
+          <a class="btn btn-primary reveal" href="https://example.com/fundraiser-participation" target="_blank" rel="noopener noreferrer">
+             20 service hours --> Sliver
+          </a>
+          <a class="btn btn-primary reveal" href="https://example.com/senior-quote" target="_blank" rel="noopener noreferrer">
+             50 service hours --> Gold
+          </a>
+          <a class="btn btn-primary reveal" href="https://example.com/cap-gown-order" target="_blank" rel="noopener noreferrer">
+            400+ serive hours --> Platinum
+          </a>
+        </div>
+      </div>
+    </section>
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    <!-- Level up -->
+    <section id="fundraisers" class="section section-alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Level up</h2>
+          <p class="muted">Progress bars help keep track of hours and events </p>
+        </div>
+
+        <div class="fundraisers-grid">
+          <article class="card reveal">
+            <div class="card-top">
+              <h3>Hours needed to level up</h3>
+              <span class="tag">Community</span>
+            </div>
+            <p>Earn more hours to update your goose!!!!</p>
+
+            <div>
+              <div class="progress-row">
+                <span class="muted">Goal: 10 hours</span>
+                <span class="muted" id="bakeSaleLabel">5 hours</span>
+              </div>
+              <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="35">
+                <div class="progress-fill" style="width: 35%"></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-top">
+              <h3>Community Served</h3>
+              <span class="tag">Community</span>
+            </div>
+            <p>Volunteer more to update your goose!!!!</p>
+
+            <div class="progress-wrap" aria-label="Car Wash fundraising progress">
+              <div class="progress-row">
+                <span class="muted">Goal: 15 communties</span>
+                <span class="muted" id="carWashLabel">8 communities joined</span>
+              </div>
+              <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="55">
+                <div class="progress-fill" style="width: 55%"></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-top">
+              <h3>Team Volunteering</h3>
+              <span class="tag">Community</span>
+            </div>
+            <p>Join more Teams!!!!</p>
+
+            <div class="progress-wrap" aria-label="Merchandise fundraising progress">
+              <div class="progress-row">
+                <span class="muted">Goal: 20</span>
+                <span class="muted" id="merchLabel">15 joined</span>
+              </div>
+              <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="60">
+                <div class="progress-fill" style="width: 60%"></div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Contact</h2>
+          <p class="muted">Questions, ideas, or volunteer interest? Reach out below.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card reveal">
+            <h3>Contact Emails</h3>
+            <ul class="contact-list">
+              
+              
+              <li><strong>Team help:</strong> <a href="mailto:fundraisers@example.edu">fundraisers@example.edu</a></li>
+            </ul>
+
+            <h3>Social Media</h3>
+            <ul class="social">
+              <li><a href="#" aria-label="Instagram (placeholder)">Instagram</a></li>
+              <li><a href="#" aria-label="TikTok (placeholder)">TikTok</a></li>
+              <li><a href="#" aria-label="X (placeholder)">X</a></li>
+            </ul>
+          </div>
+
+          <form class="form-card reveal" id="contactForm">
+            <h3>Send a Message</h3>
+
+            <label>
+              Name
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+
+            <label>
+              Email
+              <input type="email" name="email" placeholder="you@example.com" required />
+            </label>
+
+            <label>
+              Message
+              <textarea name="message" rows="5" placeholder="How can we help?" required></textarea>
+            </label>
+
+            <button class="btn btn-primary" type="submit">Send</button>
+            <p class="small muted" id="formStatus" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-brand">Reach</div>
+        <p class="muted small">
+          Contact: 
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#events">Events</a>
+        <a href="#dates"> Volunteer</a>
+        <a href="#forms">Profile</a>
+        <a href="#fundraisers">Pond</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-social">
+        <span class="muted small">Social (placeholders):</span>
+        <div class="social-row">
+          <a href="#" aria-label="Instagram placeholder">IG</a>
+          <a href="#" aria-label="TikTok placeholder">TT</a>
+          <a href="#" aria-label="X placeholder">X</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom small muted">
+      © <span id="year"></span> Reach• All rights reserved
+    </div>
+  </footer>
+
+  <!-- Simple modal for "Learn More" buttons -->
+  <dialog class="modal" id="eventModal" aria-label="Event details dialog">
+    <div class="modal-inner">
+      <div class="modal-head">
+        <h3 id="modalTitle">About Us</h3>
+        <button class="icon-btn" id="closeModalBtn" aria-label="Close dialog">✕</button>
+      </div>
+      
+      <div class="modal-actions">
+        <button class="btn btn-secondary" id="modalOkBtn">Got it</button>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="index.js"></script>
+</body>
+</html>
+  
+  
+  
